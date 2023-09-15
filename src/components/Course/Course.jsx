@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import './Course.css'
-const Course = ({ course }) => {
+const Course = ({ course,handleClick}) => {
   const { title,image,description,price,credit } = course;
   return (
     <div>
@@ -30,7 +30,7 @@ const Course = ({ course }) => {
             </div>
           </div>
           <div className="card-actions mt-3">
-            <button className="btn btn-primary w-full normal-case text-lg font-bold text-white rounded-lg bg-[#2F80ED] hover:bg-[#2F80ED]">Select</button>
+            <button onClick={()=>handleClick(course)} className="btn btn-primary w-full normal-case text-lg font-bold text-white rounded-lg bg-[#2F80ED] hover:bg-[#2F80ED]">Select</button>
           </div>
         </div>
       </div>

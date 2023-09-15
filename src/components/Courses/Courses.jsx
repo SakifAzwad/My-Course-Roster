@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import Course from "../Course/Course";
 
-const Courses = () => {
+const Courses = ({handleClick}) => {
 
     const [courses,setCourses]=useState([]);
     
@@ -13,11 +14,14 @@ const Courses = () => {
         .then(data=>setCourses(data))
     },[])
 
+    
+
     return (
         <div className="pb-10">
             <div className="grid grid-cols-3 ml-24 max-w-5xl w-full gap-y-6">
             {
                 courses.map(course=><Course key={course.id}
+                handleClick={handleClick}
                  course={course}   
                 ></Course>)
             }            
