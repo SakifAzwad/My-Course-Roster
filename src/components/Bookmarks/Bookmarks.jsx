@@ -5,7 +5,7 @@ import './Bookmarks.css'
 
 const Bookmarks = ({insert,totalCost,totalCredit}) => {
     return (
-        <div>
+        <div className='md:pr-8 md:mx-0 mx-4'>
             <div className="lg:ml-20 md:ml-4 bg-white rounded-xl">
             <h1 className="text-lg font-bold text-[#2F80ED] p-8 pb-5">Credit Hour Remaining {20-totalCredit} hr</h1>
             <hr className="col3 h-[1.5px] mx-8" />

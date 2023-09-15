@@ -18,7 +18,7 @@ const Courses = ({handleClick}) => {
 
     return (
         <div className="pb-10">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 md:ml-4 lg:ml-24 max-w-5xl w-full gap-y-6">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  lg:ml-24 ml-12 md:max-w-5xl lg:w-full gap-y-6">
             {
                 courses.map(course=><Course key={course.id}
                 handleClick={handleClick}
