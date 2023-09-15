@@ -41,4 +41,5 @@ I used 5 states in this project.
 
 --> const [courses,setCourses]=useState([]);
 
-    In 'courses' array I fetched all the data as an array of objects from the JSON file. 'useEffect()' has also been used to achieve this.
+    In 'courses' array I fetched all the data as an array of objects from the JSON file. 
+    'useEffect()' has also been used to achieve this.
